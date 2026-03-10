@@ -2,7 +2,7 @@ package day04;
 
 import java.util.Scanner;
 
-public class EvenorOddProgramPractice {
+public class EvenorOddProgramPracticeUsingIf_Else {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

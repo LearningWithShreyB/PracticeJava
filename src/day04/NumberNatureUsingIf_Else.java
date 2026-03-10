@@ -2,7 +2,7 @@ package day04;
 
 import java.util.Scanner;
 
-public class NumberNature {
+public class NumberNatureUsingIf_Else {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
