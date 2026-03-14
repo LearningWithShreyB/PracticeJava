@@ -11,12 +11,16 @@ public class PrintingOddNumbersPracticeUsingDo_WhileLoop {
 		System.out.println("Enter the ending value: ");
 		int ev = sc.nextInt();
 
-		while (sv <= ev) {
-			if (sv % 2 != 0) {
-				System.out.println(sv);
+		do {
+			if (sv > ev) {
+				System.out.println("Starting value should be less than ending value. Please do the needful!");
+			} else {
+				if (sv % 2 != 0) {
+					System.out.println(sv);
+				}
+				sv++;
 			}
-			sv++;
-		}
+		} while (sv <= ev);
 
 		sc.close();
 

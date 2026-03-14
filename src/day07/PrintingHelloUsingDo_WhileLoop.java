@@ -9,10 +9,10 @@ public class PrintingHelloUsingDo_WhileLoop {
 		System.out.println("Enter the value till you want to print Hello: ");
 		int ev = sc.nextInt();
 		int i = 1;
-		while (i <= ev) {
+		do {
 			System.out.println("Hello");
 			i++;
-		}
+		} while (i <= ev);
 
 		sc.close();
 	}
