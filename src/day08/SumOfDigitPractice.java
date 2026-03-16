@@ -11,14 +11,12 @@ public class SumOfDigitPractice {
 		int num = sc.nextInt();
 		System.out.println("The original number is: " + num);
 		int sum = 0;
-		int digits = 0;
 		while (num > 0) {
-			digits = num % 10;
-			sum = sum + digits;
+			sum = sum + num % 10;
 			num = num / 10;
 		}
 
-		System.out.println("The calculated number is: " + sum);
+		System.out.println("The Sum of digits are: " + sum);
 		sc.close();
 
 	}
