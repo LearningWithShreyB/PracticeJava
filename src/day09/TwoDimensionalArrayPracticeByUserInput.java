@@ -26,6 +26,9 @@ public class TwoDimensionalArrayPracticeByUserInput {
 			}
 			System.out.println();
 		}
+		
+		System.out.println("Rows length: "+a.length);
+		System.out.println("Columns length: "+a[0].length);
 
 		sc.close();
 

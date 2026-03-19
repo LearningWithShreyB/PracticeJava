@@ -11,6 +11,12 @@ public class TwoDimensionalArrayPractice {
 				System.out.println(a[i][j]);
 			}
 		}
+		
+		System.out.println("Rows length: "+a.length);
+		for(int i=0;i<=a.length-1;i++)
+		{
+			System.out.println("Column length: "+a[i].length);
+		}
 
 	}
 
