@@ -2,7 +2,7 @@ package day10;
 
 import java.util.Scanner;
 
-public class PrintEvenAndOddNumbersInArray {
+public class CountEvenAndOddNumbersInArray {
 
 	public static void main(String[] args) {
 
@@ -15,14 +15,20 @@ public class PrintEvenAndOddNumbersInArray {
 			a[i] = sc.nextInt();
 		}
 
+		int even = 0;
+		int odd = 0;
+
 		for (int i = 0; i < a.length; i++) {
 			if (a[i] % 2 == 0) {
-				System.out.println("Even digits are: " + a[i]);
+				even++;
 			} else {
-				System.out.println("Odd digits are: " + a[i]);
+				odd++;
 			}
 		}
-		
+
+		System.out.println("No. of even are: " + even);
+		System.out.println("No. of odd are: " + odd);
+
 		sc.close();
 
 	}
