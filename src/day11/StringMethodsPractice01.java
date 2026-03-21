@@ -1,6 +1,6 @@
 package day11;
 
-public class StringMethodsPractice {
+public class StringMethodsPractice01 {
 
 	public static void main(String[] args) {
 		String a = "Hello, Welcome to String Methods Practice! ";
