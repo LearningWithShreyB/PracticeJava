@@ -2,7 +2,7 @@ package day11;
 
 import java.util.Scanner;
 
-public class StringMethodsPractice02 {
+public class StringMethodsPractice03 {
 
 	public static void main(String[] args) {
 
@@ -12,7 +12,7 @@ public class StringMethodsPractice02 {
 		System.out.println("Enter a string: ");
 		String s2 = sc.next();
 
-		System.out.println("Is s1 and s2 equal? " + s1.equalsIgnoreCase(s2));
+		System.out.println("Is s1 and s2 equal? " + s1.equals(s2));
 		sc.close();
 
 	}
