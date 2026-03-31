@@ -17,7 +17,6 @@ public class ParamPractice {
 
 	double m4(int r) {
 		double area = 22.7 * r * r;
-		System.out.println("Area of circle is: " + area);
 		return area;
 	}
 }
