@@ -33,6 +33,13 @@ public class C2_MI extends C1 implements I1, I2, I3 {
 	static int c5 = 500;
 	final int c6 = 600;
 
+	public void ParentVars() {
+		System.out.println("Calling one method to achieve the values from parent class");
+		System.out.println("The variable from parent class C1: " + super.c1);
+		System.out.println("The static variable from parent class C1: " + super.c2);
+		System.out.println("The final variable from parent class C1: " + super.c3);
+	}
+
 	public static void main(String[] args) {
 
 		C2_MI obj = new C2_MI();
@@ -68,6 +75,9 @@ public class C2_MI extends C1 implements I1, I2, I3 {
 		obj.m9();
 		obj.m10();
 		m11();
+
+		obj.ParentVars();
+		System.out.println("The static variable from parent class C1 without using suoer keyword: " + C1.c2);
 	}
 
 }
