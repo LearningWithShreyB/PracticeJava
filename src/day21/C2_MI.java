@@ -77,7 +77,7 @@ public class C2_MI extends C1 implements I1, I2, I3 {
 		m11();
 
 		obj.ParentVars();
-		System.out.println("The static variable from parent class C1 without using suoer keyword: " + C1.c2);
+		System.out.println("The static variable from parent class C1 without using super keyword: " + C1.c2);
 	}
 
 }
