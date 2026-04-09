@@ -22,7 +22,7 @@ public class AbstractionPractice implements A1 {
 		System.out.println("This is m3 method from interface A1 defined in main method which is an abstract method");
 	}
 
-	void m4() {
+	public void m4() {
 		System.out.println("This is m4 method which is a normal method defined in main method");
 	}
 
