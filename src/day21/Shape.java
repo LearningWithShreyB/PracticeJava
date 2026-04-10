@@ -21,6 +21,6 @@ public abstract class Shape {
     }
 
     public void display() {
-        System.out.println("Color: " + color);
+        System.out.println("The value of color is: " + color);
     }
 }

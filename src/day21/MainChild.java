@@ -8,9 +8,13 @@ public class MainChild {
 
 		System.out.println("Area of the shape is: " + obj01.area());
 		
+		obj01.display();
+		
 		Shape obj02=new Circle(20, "Red");
 		
 		System.out.println("Area of the shape is: " + obj02.area());
+		
+		obj02.display();
 
 	}
 
