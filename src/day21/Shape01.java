@@ -2,20 +2,39 @@ package day21;
 
 public abstract class Shape01 {
 
-	int color;
+	private String color;
 
 	public abstract double area();
 
-	public Shape01() {
-		System.out.println("This is a constructor from Shape class");
+	public String getColor() {
+		return color;
 	}
 
-	public Shape01(int color) {
+	public void setColor(String color) {
 		this.color = color;
 	}
 
-	public void m1() {
-		System.out.println("This is a normal method in Shape class");
+	public void display() {
+		System.out.println("The value of color is: " + color);
+	}
+
+	class Rectangle extends Shape01 {
+		private double length, width;
+
+		public double area() {
+			return length * width;
+		}
+	}
+
+	abstract class Random extends Shape01 {
+		void m1() {
+			System.out.println("A random method creation which extends a abstract class and itself a abstract class.");
+		}
+	}
+
+	public static void main(String[] args) {
+		//Rectangle obj02 = new Rectangle();
+
 	}
 
 }
