@@ -1,6 +1,6 @@
 package day24;
 
-public class Child01 {
+public class Child01 extends Parent {
 
 	int m3 = 200;
 
