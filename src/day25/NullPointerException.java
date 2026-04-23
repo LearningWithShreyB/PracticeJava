@@ -9,7 +9,7 @@ public class NullPointerException {
 		System.out.println("Program is started");
 
 		String s = null;
-		System.out.println("Length os a string is: " + s.length());
+		System.out.println("Length of a string is: " + s.length());
 
 		System.out.println("Program is completed");
 		sc.close();
