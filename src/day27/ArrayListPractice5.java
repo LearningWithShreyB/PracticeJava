@@ -3,7 +3,7 @@ package day27;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayListPractice4 {
+public class ArrayListPractice5 {
 
 	public static void main(String[] args) {
 
@@ -19,18 +19,18 @@ public class ArrayListPractice4 {
 		al1.add(null);
 		al1.add(null);
 
-		System.out.println("Printing data from ArrayList before inserting the element: " + al1);
+		System.out.println("Printing data from ArrayList before updating the element: " + al1);
 
 		System.out.println("Give the index number, we have to insert the element: ");
 		int num = sc.nextInt();
-		
+
 		System.out.println("Enter a value: ");
 		String value = sc.next();
 
-		al1.add(num, value);
+		al1.set(num, value);
 
-		System.out.println("Printing data from ArrayList after inserting the element: " + al1);
-		
+		System.out.println("Printing data from ArrayList after updating the element: " + al1);
+
 		sc.close();
 
 	}
