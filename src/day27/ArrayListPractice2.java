@@ -33,6 +33,8 @@ public class ArrayListPractice2 {
 		int size = al1.size();
 		System.out.println("The size of an ArrayList is: " + size);
 
+		sc.close();
+
 	}
 
 }
