@@ -3,7 +3,7 @@ package day27;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ArrayListPractice01 {
+public class ArrayListPractice2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -29,6 +29,9 @@ public class ArrayListPractice01 {
 		al1.add(null);
 
 		System.out.println("Printing data from ArrayList: " + al1);
+
+		int size = al1.size();
+		System.out.println("The size of an ArrayList is: " + size);
 
 	}
 
