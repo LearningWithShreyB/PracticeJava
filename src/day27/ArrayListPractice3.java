@@ -21,15 +21,14 @@ public class ArrayListPractice3 {
 
 		System.out.println("Printing data from ArrayList before removing the element: " + al1);
 
-		int size = al1.size();
-		System.out.println("The size of an ArrayList is: " + size);
-
 		System.out.println("Give the index number from which we have to remove the element: ");
 		int num = sc.nextInt();
 
 		al1.remove(num);
 
 		System.out.println("Printing data from ArrayList after removing the element: " + al1);
+		
+		sc.close();
 
 	}
 
