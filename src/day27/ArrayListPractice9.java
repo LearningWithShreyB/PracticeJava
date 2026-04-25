@@ -1,10 +1,9 @@
 package day27;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
-public class ArrayListPractice8 {
+public class ArrayListPractice9 {
 
 	public static void main(String[] args) {
 
@@ -22,9 +21,8 @@ public class ArrayListPractice8 {
 
 		System.out.println("Printing data from ArrayList: ");
 
-		Iterator<Object> it = al1.iterator();
-		while (it.hasNext()) {
-			System.out.println(it.next());
+		for (Object i : al1) {
+			System.out.println(i);
 		}
 
 		sc.close();
