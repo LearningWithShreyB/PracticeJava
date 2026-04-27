@@ -3,7 +3,7 @@ package day28;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class HashSetPractice10 {
+public class HashSetPractice7 {
 
 	public static void main(String[] args) {
 
