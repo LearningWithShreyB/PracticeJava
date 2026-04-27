@@ -3,7 +3,7 @@ package day28;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class HashSetPractice1 {
+public class HashSetPractice2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -28,8 +28,12 @@ public class HashSetPractice1 {
 		hs1.add(null);
 		hs1.add(null);
 
-		System.out.println("Printing data from HashSet for first time: " + hs1);
-		System.out.println("Printing data from HashSet for second time: " + hs1);
+		System.out.println("Printing data from HashSet: " + hs1);
+
+		int size = hs1.size();
+		System.out.println("The size of an HashSet is: " + size);
+
+		sc.close();
 
 	}
 
