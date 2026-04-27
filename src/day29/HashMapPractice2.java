@@ -20,6 +20,8 @@ public class HashMapPractice2 {
 		System.out.println("Printing the value from HashMap: " + hm2);
 		
 		System.out.println("The size of HashMap: "+hm2.size());
+		
+		sc.close();
 
 	}
 

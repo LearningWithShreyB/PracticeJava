@@ -3,7 +3,7 @@ package day29;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class HashMapPractice3 {
+public class HashMapPractice4 {
 
 	public static void main(String[] args) {
 
@@ -17,12 +17,13 @@ public class HashMapPractice3 {
 		hm2.put("Graduated", true);
 		hm2.put("Married", null);
 
-		System.out.println("Printing the value from HashMap: ");
+		System.out.println("Printing the value from HashMap: "+hm2);
 
-		for (Object i : hm2.keySet()) {
-			System.out.println(i + "  " + hm2.get(i));
-		}
-		
+		System.out.println("Enter the key pair from the existing elements: ");
+		String k1 = sc.next();
+
+		System.out.println("The result is: " + hm2.get(k1));
+
 		sc.close();
 
 	}

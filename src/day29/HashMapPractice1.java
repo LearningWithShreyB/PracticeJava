@@ -41,6 +41,8 @@ public class HashMapPractice1 {
 		hm1.put(p9, p10);
 
 		System.out.println("Printing the value from HashMap: " + hm1);
+		
+		sc.close();
 
 	}
 

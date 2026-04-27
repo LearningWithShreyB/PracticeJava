@@ -30,6 +30,8 @@ public class HashSetPractice1 {
 
 		System.out.println("Printing data from HashSet for first time: " + hs1);
 		System.out.println("Printing data from HashSet for second time: " + hs1);
+		
+		sc.close();
 
 	}
 
