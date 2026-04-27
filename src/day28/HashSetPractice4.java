@@ -1,6 +1,6 @@
 package day28;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class HashSetPractice4 {
@@ -8,26 +8,37 @@ public class HashSetPractice4 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList<Object> al1 = new ArrayList<Object>();
+		HashSet<Object> hs1 = new HashSet<Object>();
 
-		al1.add(150);
-		al1.add(22.7);
-		al1.add(true);
-		al1.add("Hello");
-		al1.add('S');
-		al1.add(150);
-		al1.add(null);
-		al1.add(null);
+		hs1.add(150);
+		hs1.add(22.7);
+		hs1.add(true);
+		hs1.add("Hello");
+		hs1.add('S');
+		hs1.add(150);
+		hs1.add(null);
+		hs1.add(null);
 
-		System.out.println("Printing data from ArrayList before removing the element: " + al1);
+		System.out.println("Printing data from HashSet before removing the element: " + hs1);
+		System.out.println("Enter element to remove:");
+		String input = sc.next();
 
-		System.out.println("Give the index number from which we have to remove the element: ");
-		int num = sc.nextInt();
+		if (input.equalsIgnoreCase("null")) {
+			hs1.remove(null);
+		} else if (input.matches("\\d+")) {
+			hs1.remove(Integer.parseInt(input));
+		} else if (input.matches("\\d+\\.\\d+")) {
+			hs1.remove(Double.parseDouble(input));
+		} else if (input.equalsIgnoreCase("true") || input.equalsIgnoreCase("false")) {
+			hs1.remove(Boolean.parseBoolean(input));
+		} else if (input.length() == 1) {
+			hs1.remove(input.charAt(0));
+		} else {
+			hs1.remove(input);
+		}
 
-		al1.remove(num);
+		System.out.println("Printing data from HashSet after removing the element: " + hs1);
 
-		System.out.println("Printing data from ArrayList after removing the element: " + al1);
-		
 		sc.close();
 
 	}

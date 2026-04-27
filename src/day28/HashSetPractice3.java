@@ -1,6 +1,6 @@
 package day28;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class HashSetPractice3 {
@@ -8,26 +8,24 @@ public class HashSetPractice3 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList<Object> al1 = new ArrayList<Object>();
+		HashSet<Object> hs1 = new HashSet<Object>();
 
-		al1.add(150);
-		al1.add(22.7);
-		al1.add(true);
-		al1.add("Hello");
-		al1.add('S');
-		al1.add(150);
-		al1.add(null);
-		al1.add(null);
+		hs1.add(150);
+		hs1.add(22.7);
+		hs1.add(true);
+		hs1.add("Hello");
+		hs1.add('S');
+		hs1.add(150);
+		hs1.add(null);
+		hs1.add(null);
 
-		System.out.println("Printing data from ArrayList before removing the element: " + al1);
+		System.out.println("Printing data from HashSet before removing the element: " + hs1);
 
-		System.out.println("Give the index number from which we have to remove the element: ");
-		int num = sc.nextInt();
 
-		al1.remove(num);
+		hs1.remove(true);
 
-		System.out.println("Printing data from ArrayList after removing the element: " + al1);
-		
+		System.out.println("Printing data from HashSet after removing the element: " + hs1);
+
 		sc.close();
 
 	}
