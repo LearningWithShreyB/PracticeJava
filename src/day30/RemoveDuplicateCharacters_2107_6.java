@@ -11,18 +11,20 @@ public class RemoveDuplicateCharacters_2107_6 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter a string:");
-		String str = sc.next();
+		Set<Integer> set = new LinkedHashSet<Integer>();
 
-		Set<Character> set = new LinkedHashSet<Character>();
+		System.out.println("Enter how many numbers:");
+		int n = sc.nextInt();
 
-		for (char ch : str.toCharArray()) {
-			set.add(ch);
+		System.out.println("Enter the numbers:");
+		for (int i = 0; i < n; i++) {
+			int num = sc.nextInt();
+			set.add(num);
 		}
 
 		System.out.println("The result is: ");
-		for (char ch : set) {
-			System.out.println(ch);
+		for (int num : set) {
+			System.out.println(num);
 		}
 
 		sc.close();
