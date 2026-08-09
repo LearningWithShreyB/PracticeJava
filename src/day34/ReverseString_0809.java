@@ -3,7 +3,7 @@ package day34;
 public class ReverseString_0809 {
 
 	public static void main(String[] args) {
-		String str = "Hello";
+		String str = "Hello World";
 
 		String rev = "";
 
@@ -11,6 +11,7 @@ public class ReverseString_0809 {
 			rev += str.charAt(i);
 		}
 
+		System.out.println("Original String is: " + str);
 		System.out.println("The result is: " + rev);
 
 	}
