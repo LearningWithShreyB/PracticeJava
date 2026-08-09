@@ -1,6 +1,6 @@
 package day34;
 
-public class InterchangeThePositionOfCharactersInAString_IndexAs0_0908 {
+public class InterchangeThePositionOfCharactersInAString_IndexAs1_909 {
 
 	public static void main(String[] args) {
 
@@ -10,6 +10,9 @@ public class InterchangeThePositionOfCharactersInAString_IndexAs0_0908 {
 
 		int pos1 = 1;
 		int pos2 = 5;
+		
+		pos1--;
+		pos2--;
 
 		if (pos1 < 0 || pos1 >= ch.length || pos2 < 0 || pos2 >= ch.length) {
 			System.out.println("Invalid Position!!");
